@@ -30,11 +30,11 @@ public class Student {
     }
 
     public static void main(String[] args) {
-        List<Student> students = new ArrayList<>(List.of(new Student("Ade", 20),
+        List<Student> students = List.of(new Student("Ade", 20),
                 new Student("Abimbola", 40),
                 new Student("Felix", 30),
                 new Student("Pauline", 2),
-                new Student("Mich", 100)));
+                new Student("Mich", 100));
 
 
 //        Comparator <Student> comparator = (c1, c2) -> {

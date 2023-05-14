@@ -4,6 +4,7 @@ import java.util.Arrays;
 public class ThreeConsecutiveNumber {
     public static void main(String[] args) {
         System.out.println(indexOfNumber(4, 36, 2));
+        System.out.println();
 
 
     }
