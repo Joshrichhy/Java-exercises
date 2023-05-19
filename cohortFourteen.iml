@@ -79,5 +79,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="jar_files (2)" level="project" />
   </component>
 </module>
