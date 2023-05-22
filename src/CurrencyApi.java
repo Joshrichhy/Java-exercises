@@ -10,10 +10,13 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+import Files.Json.Currency;
+import Files.Json.Deserialization.CurrencyDeserializer;
 import org.json.JSONObject;
 
 
 public class CurrencyApi {
+    static Currency currency;
     public static void main(String[] args) {
         String endpoint = "https://api.exchangerate-api.com/v4/latest/NGN";
 
@@ -26,8 +29,6 @@ public class CurrencyApi {
             String response = scanner.useDelimiter("\\Z").next();
             scanner.close();
             JSONObject data = new JSONObject(response);
-
-
 
 
             BigDecimal usd = data.getJSONObject("rates").getBigDecimal("USD");

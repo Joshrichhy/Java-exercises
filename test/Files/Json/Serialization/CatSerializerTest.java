@@ -43,7 +43,7 @@ class CatSerializerTest {
       assertNotNull(cat);
       assertEquals("Tom", cat.getName());
 
-       assertEquals("Tom", cat.getName());
+       assertEquals(20, cat.getAge());
     }
 
     @Test

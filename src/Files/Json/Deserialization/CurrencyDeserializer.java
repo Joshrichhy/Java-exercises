@@ -1,20 +1,19 @@
 package Files.Json.Deserialization;
-
-import Files.Json.Cat;
+import Files.Json.Currency;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.json.JSONObject;
 
 import java.io.IOException;
 
-public class CatDeserializer {
-    public static Cat deserializeJsonToCat(String Json) {
+public class CurrencyDeserializer {
+    public static Currency deserializeJsonToCurrency(JSONObject Json) {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
-            return objectMapper.readValue(Json.getBytes(), Cat.class);
+            return objectMapper.readValue(Json.getString("rates"), Currency.class);
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
         return null;
     }
-
 
 }
