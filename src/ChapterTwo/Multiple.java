@@ -27,7 +27,7 @@ public class Multiple {
 }
 
 
-	if ( firstNumberTrippled % secondNumberDoubled > 0) {
+	else  {
 		System.out.printf("First Number Trippled is %d%n Second Number Doubled is %d%n %d is not a Multiple of %d", firstNumberTrippled, secondNumberDoubled, firstNumberTrippled, secondNumberDoubled);
 
 }

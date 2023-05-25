@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class CreditCardValidator {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
         System.out.println("Enter Card details");
         String cardDetails = input.nextLine();
         String[] cardDetailsArray = new String[cardDetails.length()];
